@@ -277,13 +277,6 @@ nav ul li a:hover {
     align-items: center;
   }
 }
-
-/* KONTAK */
-.kontak {
-  padding: 60px 100px;
-  background-color: #eaf5ee;
-  text-align: center;
-}
 /* ===== SIMULASI PINJAMAN ===== */
 .simulasi {
   background-color: #f1f9f3;
@@ -325,6 +318,13 @@ nav ul li a:hover {
   color: #004d25;
   font-weight: 600;
   font-size: 16px;
+}
+
+/* KONTAK */
+.kontak {
+  padding: 60px 100px;
+  background-color: #eaf5ee;
+  text-align: center;
 }
 
 .kontak h2 {
@@ -401,4 +401,5 @@ footer {
   padding: 15px 0;
   font-size: 14px;
 }
+
 
