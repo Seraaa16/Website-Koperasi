@@ -56,6 +56,50 @@
       </div>
     </section>
 
+     <section class="simulasi">
+      <h2>Simulasi Perhitungan Pinjaman</h2>
+      <p>
+        Masukkan jumlah pinjaman dan lama angsuran untuk menghitung total
+        cicilan.
+      </p>
+
+      <div class="form-container" style="max-width: 500px; margin: 30px auto">
+        <label for="pinjaman">Jumlah Pinjaman (Rp):</label>
+        <input type="number" id="pinjaman" placeholder="Contoh: 5000000" />
+
+        <label for="bulan">Lama Angsuran (bulan):</label>
+        <input type="number" id="bulan" placeholder="Contoh: 12" />
+
+        <button onclick="hitungCicilan()" class="btn" style="margin-top: 10px">
+          Hitung
+        </button>
+
+        <p id="hasil" style="margin-top: 20px; font-weight: bold"></p>
+      </div>
+    </section>
+
+    <script>
+      function hitungCicilan() {
+        const pinjaman = parseFloat(document.getElementById("pinjaman").value);
+        const bulan = parseInt(document.getElementById("bulan").value);
+        const bunga = 0.05; // bunga 5% per tahun
+
+        if (isNaN(pinjaman) || isNaN(bulan) || pinjaman <= 0 || bulan <= 0) {
+          document.getElementById("hasil").innerText =
+            "Masukkan data yang valid.";
+          return;
+        }
+
+        const total = pinjaman + pinjaman * bunga;
+        const cicilan = total / bulan;
+
+        document.getElementById("hasil").innerHTML = `
+      Total yang harus dibayar: <span style="color:#006837;">Rp ${total.toLocaleString()}</span><br>
+      Cicilan per bulan: <span style="color:#006837;">Rp ${cicilan.toLocaleString()}</span>
+    `;
+      }
+    </script>
+
     <section class="cta">
       <h2>Bergabung Bersama Kami</h2>
       <p>
@@ -70,3 +114,4 @@
     </footer>
   </body>
 </html>
+
