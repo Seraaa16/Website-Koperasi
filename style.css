@@ -1,0 +1,361 @@
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GAYA DASAR */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f6fff9;
+  color: #1b1b1b;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  background-color: #006837;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c8ffc8;
+}
+
+.active {
+  border-bottom: 2px solid #c8ffc8;
+  padding-bottom: 4px;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d")
+    center/cover no-repeat;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00b050;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #009640;
+}
+
+/* TENTANG KAMI */
+.about {
+  padding: 80px 100px;
+  text-align: center;
+  background-color: #f1f9f3;
+}
+
+.about h2 {
+  font-size: 28px;
+  color: #004d25;
+  margin-bottom: 15px;
+}
+.about-hero {
+  background: url("https://images.unsplash.com/photo-1581093588401-22d3d4a1aa57")
+    center/cover no-repeat;
+  height: 60vh;
+}
+
+.struktur {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.struktur .card {
+  width: 220px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(60, 255, 0, 0.4);
+  padding: 20px;
+}
+
+.struktur .card h3 {
+  color: #006837;
+  margin-bottom: 8px;
+}
+
+/* PRODUK & LAYANAN */
+.produk {
+  padding: 80px 100px;
+  background-color: white;
+  text-align: center;
+}
+
+.produk h2 {
+  color: #004d25;
+  margin-bottom: 30px;
+}
+
+.produk-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f8fff9;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #006837;
+  margin: 15px 0 8px;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 15px;
+}
+.produk-hero {
+  background: url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1600&auto=format&fit=crop")
+    center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.produk-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.produk-hero .hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.cta {
+  background: linear-gradient(180deg, #e7f5e9, #f9fffa);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  color: #0b6b3a;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.cta .btn {
+  display: inline-block;
+  background: #10a65a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta .btn:hover {
+  background: #0b6b3a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .about,
+  .produk,
+  .kontak {
+    padding: 60px 30px;
+  }
+
+  .produk-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .struktur {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* KONTAK */
+.kontak {
+  padding: 60px 100px;
+  background-color: #eaf5ee;
+  text-align: center;
+}
+
+.kontak h2 {
+  color: #004d25;
+  margin-bottom: 15px;
+}
+/* ===== FORM KONTAK ===== */
+.form-container {
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: left;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+  color: #006837;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 18px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #004d25;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c7e5cf;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00b050;
+  box-shadow: 0 0 4px rgba(0, 176, 80, 0.3);
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  background-color: #00b050;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #009640;
+}
+/* FOOTER */
+footer {
+  background-color: #006837;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
