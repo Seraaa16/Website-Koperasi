@@ -284,6 +284,48 @@ nav ul li a:hover {
   background-color: #eaf5ee;
   text-align: center;
 }
+/* ===== SIMULASI PINJAMAN ===== */
+.simulasi {
+  background-color: #f1f9f3;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.simulasi h2 {
+  color: #004d25;
+  margin-bottom: 15px;
+}
+
+.simulasi p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.simulasi input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #c7e5cf;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.simulasi input:focus {
+  border-color: #00b050;
+  box-shadow: 0 0 4px rgba(0, 176, 80, 0.3);
+}
+
+.simulasi button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.simulasi #hasil {
+  margin-top: 20px;
+  color: #004d25;
+  font-weight: 600;
+  font-size: 16px;
+}
 
 .kontak h2 {
   color: #004d25;
@@ -359,3 +401,4 @@ footer {
   padding: 15px 0;
   font-size: 14px;
 }
+
